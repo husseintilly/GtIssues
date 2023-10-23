@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="stylesheet/feedback.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Alfa Classics</h1>
+      <!-- Add the "View Saved Items" link to the navigation -->
+      <nav>
+        <ul>
+          <li><a href="saved.html">Saved Items</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="description">
+      <h2>Alfa Classics</h2>
+      <p>
+        "Alfa Classics" is your premier destination for exploring the timeless
+        elegance of Alfa Romeo's finest classic cars. We are passionate about
+        these automotive works of art, and we've curated a collection of the
+        most iconic Alfa Romeo vehicles from private collectors.
+      </p>
+      <p>
+        Our goal is to share the rich history, exceptional design, and unrivaled
+        performance of these classic Alfa Romeos. Each car tells a unique story
+        of Italian craftsmanship and innovation that has left an indelible mark
+        on the world of automotive design.
+      </p>
+      <p>
+        Whether you're a devoted Alfa Romeo enthusiast or just appreciative of
+        beautiful vintage cars, we invite you to explore our collection,
+        interact with other like-minded enthusiasts, and celebrate the timeless
+        allure of Alfa Romeo.
+      </p>
+    </section>
+    <section id="alfa-gtv-1984">
+      <h2>Alfa Romeo GTV 2.0 1984</h2>
+      <p>
+        The Alfa Romeo GTV 2.0 (1984) is a classic sports car, cherished for its
+        stylish design, handling, and performance, making it an iconic choice
+        among automotive enthusiasts.
+      </p>
+      <figure>
+        <img
+          src="https://assets.catawiki.nl/assets/2019/10/1/b/c/0/bc0d2954-7c99-4962-ad31-7275ce2b9fb4.jpg"
+          alt="GTV 2.0 1984"
+        />
+        <figcaption>GTV 1984</figcaption>
+      </figure>
+    </section>
+    <div class="like-container">
+      <button class="like-button" data-post-id="post1">
+        Like <span class="like-count" id="post1-like">0</span>
+      </button>
+      <button
+        class="like-button"
+        class="save-button"
+        onclick="saveForLater('alfa-gtv-1984')"
+      >
+        Save for Later
+      </button>
+    </div>
+    <div class="comments-section">
+      <ul id="commentList1"></ul>
+    </div>
+
+    <textarea
+      id="newComment1"
+      rows="4"
+      cols="50"
+      placeholder="Add a comment"
+    ></textarea>
+    <button onclick="addComment(1)">Add Comment</button>
+
+    <section id="giulietta-1982">
+      <h2>Alfa Romeo Giulietta 1.8 1982</h2>
+      <p>
+        The Alfa Romeo Giulietta 1.8 (1982) model features a timeless and
+        elegant design, reflecting the iconic styling of the 80's era.
+      </p>
+      <figure>
+        <img
+          src="https://th.bing.com/th/id/OIP.nTqq5J_4WbSa-03Lu4YX8wHaFj?pid=ImgDet&rs=1"
+          alt="Giuletta 1.8 1982"
+        />
+        <figcaption>Giulietta 1982</figcaption>
+      </figure>
+    </section>
+    <div class="like-container">
+      <button class="like-button" data-post-id="post2">
+        <!-- Change data-post-id to "post2" -->
+        Like <span class="like-count" id="post2-like">0</span>
+      </button>
+      <button
+        class="like-button save-button"
+        onclick="saveForLater('giulietta-1982')"
+      >
+        <!-- Change data-post-id to "post2" -->
+        Save for Later
+      </button>
+    </div>
+    <div class="comments-section">
+      <ul id="commentList2"></ul>
+    </div>
+    <textarea
+      id="newComment2"
+      rows="4"
+      cols="50"
+      placeholder="Add a comment"
+    ></textarea>
+    <button onclick="addComment(2)">Add Comment</button>
+
+    <script src="scripts/feedback.js"></script>
+  </body>
+</html>
